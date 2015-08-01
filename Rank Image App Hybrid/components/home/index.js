@@ -1,7 +1,14 @@
 'use strict';
 
 app.home = kendo.observable({
-    onShow: function() {}
+    onShow: function() {
+		        alertok();
+        function alertok() {
+    	alert('ok');
+	}
+    }
+    
+    
 });
 
 // START_CUSTOM_CODE_home
