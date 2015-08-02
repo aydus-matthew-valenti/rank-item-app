@@ -29,12 +29,13 @@
             if (navigator && navigator.splashscreen) {
                 navigator.splashscreen.hide();
             }
-            
+
             document.addEventListener("deviceready", function() {
                 var everlive = new Everlive({
                     apiKey: "K6ZDVv4KJwbaiZO6",
                     scheme: "https"
                 });
+                window.everlive = everlive;
             });
 
             bootstrap();
