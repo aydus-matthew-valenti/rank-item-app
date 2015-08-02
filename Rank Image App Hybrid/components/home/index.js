@@ -1,8 +1,17 @@
 'use strict';
 
 app.home = kendo.observable({
+    
+    imgSrc1: 'https://img0.etsystatic.com/004/0/6762460/il_570xN.391729514_i79d.jpg',
+    
     onShow: function() {}
+    
 });
+
+(function(parent) {
+})(app.home);
+
+
 
 // START_CUSTOM_CODE_home
 document.addEventListener("deviceready", function() {
