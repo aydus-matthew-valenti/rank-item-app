@@ -38,25 +38,33 @@
       "type": "view",
       "components": [
         {
-          "type": "list",
-          "name": "dataListViewModel",
+          "type": "authentication",
+          "name": "authenticationViewModel",
           "dataProvider": "defaultProvider",
-          "collection": "Items",
-          "headerField": "ImgSrc",
-          "masterDetails": false,
-          "pullToRefresh": false,
-          "endlessScroll": false
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In"
         }
       ],
-      "name": "dataListView",
-      "title": "Data List",
+      "name": "authenticationView",
+      "title": "Authentication",
       "addToNavigation": true,
-      "icon": "organize"
+      "icon": "home"
     }
   ],
   "dataProviders": [
     {
       "type": "dataProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
       "name": "defaultProvider",
       "title": "DefaultProvider",
       "source": "everlive",
